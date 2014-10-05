@@ -1,5 +1,6 @@
 // COLORS
 $primary-blue: #27E3FC;
+$helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 /*
  * Hide visually and from screen readers: h5bp.com/u
@@ -85,8 +86,12 @@ a {
 }
 .main {
   font-family: 'Montserrat', sans-serif;
+  padding: 35px 0 21px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 .header {
+  background: #fff;
   position: fixed;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -96,12 +101,14 @@ a {
   padding: 2px 5px;
   border-bottom: 1px solid #000;
   box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  z-index: 10;
 }
 .header_heading {
   font-size: 1.4rem;
   font-weight: bold;
   line-height: 30px;
   text-align: center;
+  text-transform: uppercase;
 }
 .menu_icon {
   float: right;
@@ -110,6 +117,30 @@ a {
   img {
     max-width: 100%;
     vertical-align: bottom;
+  }
+  &:hover, &:active, &:focus {
+    opacity: 0.8;
+  }
+}
+.main_nav {
+  padding: 15% 0 0;
+}
+.nav_list {
+  > li {
+    a {
+      display: block;
+      color: #000;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      font-size: 1.85rem;
+      font-family: $helvetica;
+      font-weight: 200;
+      &:hover, &:active, &:focus {
+        font-weight: bold;
+      }
+    }
   }
 }
 .brain_icon {
@@ -121,12 +152,14 @@ a {
   }
 }
 .footer {
+  background: #fff;
   position: fixed;
   width: 100%;
   bottom: 0;
   left: 0;
   border-top: 1px solid #000;
   box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  z-index: 10;
 }
 .footer_heading {
   text-align: center;

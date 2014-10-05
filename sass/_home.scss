@@ -1,8 +1,5 @@
 .home {
   min-height: 100%;
-  padding-top: 40px;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
 }
 .home_intro {
   position: absolute;
@@ -20,6 +17,9 @@
   margin-top: -100px;
   background: no-repeat center image-url('brain_icon.png');
   background-size: contain;
+  &:hover, &:active, &:focus {
+    opacity: 0.8;
+  }
 }
 .full_site {
   position: absolute;
@@ -32,5 +32,11 @@
   text-decoration: none;
   &:hover, &:active, &:focus {
     color: scale-lightness(#000, 20%);
+  }
+}
+.slide {
+  img {
+    display: block;
+    max-width: 100%;
   }
 }
