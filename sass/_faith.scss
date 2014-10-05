@@ -1,0 +1,27 @@
+.faith_title {
+  background-image: image-url('faith.jpg');
+  background-position: left -70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 250px 10px 0;
+  h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-family: $helvetica;
+    font-weight: 200;
+  }
+  h3 {
+    font-size: 3rem;
+    color: $primary-blue;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+.faith_press {
+  padding: 5px;
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
