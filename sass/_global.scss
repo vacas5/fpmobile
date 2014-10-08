@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url('//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d3eb9de4b0f70dee8dda46/1406397341024/Gotham-Bold.eot'); /* IE9 Compat Modes */
+  src: url('//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d3eb9de4b0f70dee8dda46/1406397341024/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d3eb9de4b0f70dee8dda46/1406397341024/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+       url('http://static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d3eb9de4b0f70dee8dda46/1406397341024/Gotham-Bold.otf')  format('truetype') /* Safari, Android, iOS */
+}
+
 // COLORS
 $primary-blue: #27E3FC;
 $helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$gotham: 'Gotham-Bold', sans-serif;
 
 /*
  * Hide visually and from screen readers: h5bp.com/u
@@ -84,11 +93,20 @@ a {
     color: scale-lightness($primary-blue, 30%);
   }
 }
+h1,h2,h3,h4,h5,h6 {
+    font-family: $gotham;
+    margin-bottom: 1em;
+}
+p {
+    margin-bottom: 1em;
+}
 .main {
-  font-family: 'Montserrat', sans-serif;
-  padding: 35px 0 21px;
+  font-family: $helvetica;
+  padding: 35px 0 30px;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.4;
 }
 .header {
   background: #fff;
@@ -109,6 +127,7 @@ a {
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 0;
 }
 .menu_icon {
   float: right;
@@ -123,7 +142,7 @@ a {
   }
 }
 .main_nav {
-  padding: 15% 0 0;
+  padding: 10% 0 0;
 }
 .nav_list {
   > li {
@@ -133,7 +152,7 @@ a {
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
-      margin-bottom: 1rem;
+      margin-bottom: 5px;
       font-size: 1.85rem;
       font-family: $helvetica;
       font-weight: 200;
@@ -165,5 +184,6 @@ a {
   text-align: center;
   letter-spacing: 2px;
   padding: 3px 0;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+  margin-bottom: 0;
 }

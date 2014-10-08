@@ -28,7 +28,7 @@
   bottom: 30px;
   left: 0;
   color: #000;
-  font-weight: bold;
+  font-family: $gotham;
   text-decoration: none;
   &:hover, &:active, &:focus {
     color: scale-lightness(#000, 20%);

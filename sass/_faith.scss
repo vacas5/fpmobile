@@ -1,3 +1,37 @@
+.faith_content {
+  position: relative;
+  p {
+    padding: 0 8px;
+  }
+}
+.faith_social {
+  position: absolute;
+  top: 5%;
+  right: 10px;
+  a {
+    display: block;
+    margin-bottom: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-position: center;
+    &.facebook {
+      background-image: url(//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d520d6e4b03aa34502d4cc/1406476504137/?format=1500w);
+    }
+    &.linkedin {
+      background-image: url(//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d520fde4b03aa34502d505/1406476546243/?format=750w);
+    }
+    &.twitter {
+      background-image: url(//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d520ebe4b0c3fee1f68387/1406476529382/?format=1000w);
+    }
+    &:hover, &:active, &:focus {
+      background-color: scale-lightness(#000, 20%);
+    }
+  }
+}
 .faith_title {
   background-image: image-url('faith.jpg');
   background-position: left -70px;
@@ -9,12 +43,16 @@
     color: #fff;
     font-family: $helvetica;
     font-weight: 200;
+    line-height: 0.9;
+    margin-bottom: 0;
   }
   h3 {
     font-size: 3rem;
     color: $primary-blue;
     text-transform: uppercase;
     font-weight: bold;
+    margin-bottom: 0;
+    line-height: 0.9;
   }
 }
 .faith_press {
@@ -24,4 +62,10 @@
     width: 100%;
     max-width: 100%;
   }
+}
+.ask_faith_heading {
+  font-family: $helvetica;
+  font-weight: 200;
+  padding: 0 8px;
+  font-size: 24px;
 }
