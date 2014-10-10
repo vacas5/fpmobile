@@ -85,7 +85,7 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 strong {
-  font-weight: bold;
+  font-weight: 500;
 }
 a {
   color: $primary-blue;
@@ -99,6 +99,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
     margin-bottom: 1em;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
 }
 .main {
   font-family: $helvetica;

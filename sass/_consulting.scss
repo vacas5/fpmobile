@@ -1,0 +1,37 @@
+.consulting_slides .slide {
+    > a {
+        display: block;
+    }
+}
+.method_description {
+    display: none;
+    padding: 8px;
+    p {
+        font-size: 16px;
+        font-weight: 200;
+    }
+}
+.consulting_social {
+    margin-left: 4px;
+    a {
+        display: inline-block;
+        margin-bottom: 8px;
+        margin-left: 4px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-size: 60% auto;
+        background-position: center;
+        &.facebook {
+            background-image: url(//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d520d6e4b03aa34502d4cc/1406476504137/?format=1500w);
+        }
+        &.twitter {
+            background-image: url(//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d520ebe4b0c3fee1f68387/1406476529382/?format=1000w);
+        }
+        &:hover, &:active, &:focus {
+            background-color: scale-lightness(#000, 20%);
+        }
+    }
+}
