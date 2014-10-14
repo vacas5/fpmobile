@@ -4,5 +4,43 @@
     width: 100%;
     max-width: 100%;
   }
-  margin-bottom: 1rem;
+}
+.press_media {
+  display: none;
+  padding: 10px 5px 0;
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+}
+.press_table {
+  margin:0 0 10px;
+  th, td {
+    padding: 3px;
+    vertical-align: top;
+    text-align: left;
+  }
+  th {
+    font-family: $gotham;
+    font-weight: normal;
+    color: #bbb;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+  }
+  td {
+    font-size: 12px;
+    font-weight: 200;
+  }
+  .date {
+    font-weight: 500;
+  }
+  .link a {
+    color: #000;
+    text-decoration: none;
+    &:hover, &:focus, &:active {
+      text-decoration: underline;
+    }
+  }
 }

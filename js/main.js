@@ -56,6 +56,12 @@ popcorn.showBios = function(e) {
   });
 }
 
+popcorn.showPress = function(e) {
+  $('#pressHero').fadeOut('fast', function() {
+    $('#pressMedia').fadeIn('fast');
+  })
+}
+
 // event bindings
 $('#toggleMenu').click(function(e) {
   e.preventDefault();
@@ -75,4 +81,9 @@ $('#consultingAccordion .slide > a').click(function(e) {
 $('#talentbankIntro a').click(function(e) {
   e.preventDefault();
   popcorn.showBios(e);
-})
+});
+
+$('#pressHero').click(function(e) {
+  e.preventDefault();
+  popcorn.showPress(e);
+});
