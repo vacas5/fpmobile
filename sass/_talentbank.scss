@@ -1,0 +1,47 @@
+.talentbank_headline {
+  font-family: $helvetica;
+  font-weight: 200;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 5px;
+  margin-bottom: 5px;
+}
+.talentbank_description {
+  font-family: $helvetica;
+  font-weight: 200;
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 5px;
+  margin-bottom: 5px;
+}
+.talentbank_bios {
+  display: none;
+}
+.bio {
+  padding: 16px;
+  .thumbnail {
+    display: block;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto 20px;
+    float: none;
+    box-shadow: 0 2px 5px 0 rgba(50,50,50,.75);
+  }
+}
+.bio_name {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+.bio_title {
+  font-family: $helvetica;
+  font-weight: 200;
+  text-align: center;
+  font-size: 16px;
+}
+.bio_long {
+  font-weight: 200;
+}

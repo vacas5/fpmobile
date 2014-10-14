@@ -42,6 +42,20 @@ popcorn.toggleAccordion = function(e) {
   }
 }
 
+popcorn.showBios = function(e) {
+  var $target = $(e.currentTarget),
+  anchor = $target.attr('href');
+
+  $('#talentbankIntro').fadeOut('fast', function() {
+    $('#talentbankBios').fadeIn('fast');
+    // show selected
+    var toScroll = $(anchor).offset().top;
+    $('html, body').animate({
+      scrollTop: toScroll - 40
+    }, 300);
+  });
+}
+
 // event bindings
 $('#toggleMenu').click(function(e) {
   e.preventDefault();
@@ -57,3 +71,8 @@ $('#consultingAccordion .slide > a').click(function(e) {
   e.preventDefault();
   popcorn.toggleAccordion(e);
 });
+
+$('#talentbankIntro a').click(function(e) {
+  e.preventDefault();
+  popcorn.showBios(e);
+})
