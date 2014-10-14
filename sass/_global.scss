@@ -148,7 +148,7 @@ p {
   }
 }
 .main_nav {
-  padding: 10% 0 0;
+  padding: 5% 0 0;
 }
 .nav_list {
   > li {
@@ -163,7 +163,7 @@ p {
       font-family: $helvetica;
       font-weight: 200;
       &:hover, &:active, &:focus {
-        font-weight: bold;
+        font-weight: 500;
       }
     }
   }
