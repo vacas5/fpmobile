@@ -1,0 +1,77 @@
+.article_title, .article_date, .article_description, .article_content {
+    padding: 0 5px;
+}
+.article_wrapper {
+    .article_image {
+        width: 100%;
+        padding-top: 75%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .article_title {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: $helvetica;
+        font-weight: 500;
+        margin-bottom: 0;
+    }
+    .article_date {
+        font-size: 13px;
+        color: #666;
+        text-transform: uppercase;
+        font-family: $helvetica;
+        font-weight: 500;
+    }
+    .article_description {
+        font-weight: 200;
+        padding: 0 5px;
+    }
+}
+.culture_article {
+    display: none;
+    position: relative;
+    .article_image {
+        margin-bottom: 10px;
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    .article_title {
+        font-size: 20px;
+    }
+}
+.article_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 10px;
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    text-decoration: none;
+}
+.article_social {
+  a {
+    display: inline-block;
+    margin:0 0 8px 4px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-position: center;
+    &.facebook {
+      background-image: url(//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d520d6e4b03aa34502d4cc/1406476504137/?format=1500w);
+    }
+    &.twitter {
+      background-image: url(//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d520ebe4b0c3fee1f68387/1406476529382/?format=1000w);
+    }
+    &:hover, &:active, &:focus {
+      background-color: scale-lightness(#000, 20%);
+    }
+  }
+}
