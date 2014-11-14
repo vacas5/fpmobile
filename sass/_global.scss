@@ -9,6 +9,7 @@
 // COLORS
 $primary-blue: #27E3FC;
 $helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$helvetica-bold: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosBold', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 $gotham: 'Gotham-Bold', sans-serif;
 
 /*
@@ -154,7 +155,8 @@ html {
   -webkit-overflow-scrolling: touch;
 }
 strong {
-  font-weight: 500;
+  font-weight: 600;
+  font-family: $helvetica-bold;
 }
 a {
   color: $primary-blue;
@@ -227,12 +229,15 @@ p {
       text-align: center;
       text-transform: uppercase;
       text-decoration: none;
-      margin-bottom: 5px;
+      margin-bottom: 1px;
       font-size: 1.85rem;
       font-family: $helvetica;
       font-weight: 200;
+      letter-spacing: -0.5px;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       &:hover, &:active, &:focus {
-        font-weight: 500;
+        font-family: $helvetica-bold;
+        font-weight: 600;
       }
     }
   }

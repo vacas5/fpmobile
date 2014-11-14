@@ -8,20 +8,21 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        display: block;
     }
     .article_title {
         font-size: 16px;
         text-transform: uppercase;
-        font-family: $helvetica;
-        font-weight: 500;
+        font-family: $helvetica-bold;
+        font-weight: 600;
         margin-bottom: 0;
     }
     .article_date {
         font-size: 13px;
         color: #666;
         text-transform: uppercase;
-        font-family: $helvetica;
-        font-weight: 500;
+        font-family: $helvetica-bold;
+        font-weight: 600;
     }
     .article_description {
         font-weight: 200;
