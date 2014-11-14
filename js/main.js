@@ -133,7 +133,7 @@ $('#enterHome').click(function(e) {
   popcorn.enterHome(e);
 });
 
-$('#consultingAccordion .slide > a').click(function(e) {
+$('#consultingAccordion .slide > a, .accordion_toggle').click(function(e) {
   e.preventDefault();
   popcorn.toggleAccordion(e);
 });
