@@ -1,4 +1,5 @@
 // scripts
+
 var popcorn = popcorn || {};
 
 popcorn.toggleMenu = function(e) {
@@ -66,17 +67,19 @@ popcorn.createArticles = function(xml) {
   var self = this;
   self.xml = xml;
   $(xml).find('item').each(function(i) {
-    var title = $(this).find('title').text(),
-    image = $(this).find('media\\:content').attr('url'),
-    date = $(this).find('pubDate').text(),
-    dateArray = date.split(' '),
-    description = $(this).find('description').text();
+    var markup = {
+      title: $(this).children().eq(0).text(),
+      image: $(this).children().eq(7).attr('url'),
+      date: $(this).find('pubDate').text(),
+      description: $(this).find('description').text()
+    }
+    markup.dateArray = markup.date.split(' ');
 
-    var slide = '<div class="article_wrapper" data-article="' + i + '">'
-    + '<div class="article_image" style="background-image:url(' + image + ');"></div>'
-    + '<h2 class="article_title">' + title + '</h2>'
-    + '<h3 class="article_date">' + dateArray[2] + ' ' + dateArray[1] + ', ' + dateArray[3] + '</h3>'
-    + '<p class="article_description">' + description + '</p>'
+    var slide = '<div class="article_wrapper">'
+    + '<a href="#" class="article_image" style="background-image:url(' + markup.image + ');" data-article="' + i + '"></a>'
+    + '<h2 class="article_title">' + markup.title + '</h2>'
+    + '<h3 class="article_date">' + markup.dateArray[2] + ' ' + markup.dateArray[1] + ', ' + markup.dateArray[3] + '</h3>'
+    + '<p class="article_description">' + markup.description + '</p>'
     + '</div>';
 
     $('#cultureArticleFeed').append(slide);
@@ -88,9 +91,9 @@ popcorn.showArticle = function(e) {
   $target = $(e.currentTarget),
   articleIndex = $target.data('article'),
   $article = $(self.xml).find('item').eq(articleIndex),
-  title = $article.find('title').text(),
-  image = $article.find('media\\:content').attr('url'),
-  content = $article.find('content\\:encoded').text(),
+  title = $article.children().eq(0).text(),
+  image = $article.children().eq(7).attr('url'),
+  content = $article.children().eq(6).text(),
   link = $article.find('link').text(),
   uriTitle = encodeURIComponent(title);
 
@@ -145,7 +148,7 @@ $('#pressHero').click(function(e) {
   popcorn.showPress(e);
 });
 
-$('body').on('click', '.article_wrapper', function(e) {
+$('body').on('click', '.article_wrapper > .article_image', function(e) {
   e.preventDefault();
   popcorn.showArticle(e);
 });
