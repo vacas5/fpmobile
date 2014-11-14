@@ -1,11 +1,15 @@
+.talentbank_content {
+  padding: 0 20px;
+}
 .talentbank_headline {
   font-family: $helvetica;
   font-weight: 200;
-  font-size: 2rem;
+  font-size: 30px;
   text-align: center;
   line-height: 1.2;
   padding: 0 5px;
-  margin-bottom: 5px;
+  margin: 0 -10px 5px;
+  letter-spacing: -0.5px;
 }
 .talentbank_description {
   font-family: $helvetica;

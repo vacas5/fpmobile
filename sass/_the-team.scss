@@ -1,73 +1,82 @@
 .team_content {
+  padding: 0 20px;
   .thumbnail {
     background-image: url("//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53e28424e4b035b076bbfe82/1407353897582/portraits_2.png?format=1500w&storage=local");
   }
+}
+.team_headline {
+  text-transform: uppercase;
+  font-size: 36px;
+}
+.team_description {
+  font-size: 14px;
+  line-height: 1.3;
 }
 .team_intro {
   .thumbnail {
     background-size: 700% auto;
     &.ted {
-      background-position: 0 -36px;
+      background-position: -2px -26px;
     }
     &.tiana {
-      background-position: -196px -36px;
+      background-position: -146px -26px;
     }
     &.kathleen {
-      background-position: -382px -36px;
+      background-position: -286px -26px;
     }
     &.kate {
-      background-position: -582px -36px;
+      background-position: -432px -26px;
     }
     &.billie {
-      background-position: -760px -36px;
+      background-position: -568px -26px;
     }
     &.ron {
-      background-position: -5px -240px;
+      background-position: -5px -176px;
     }
     &.nyla {
-      background-position: -197px -240px;
+      background-position: -147px -176px;
     }
     &.janet {
-      background-position: -386px -240px;
+      background-position: -288px -176px;
     }
     &.pamela {
-      background-position: -586px -240px;
+      background-position: -436px -176px;
     }
     &.michele {
-      background-position: -762px -240px;
+      background-position: -568px -176px;
     }
     &.marc {
-      background-position: -16px -452px;
+      background-position: -12px -332px;
     }
     &.clare {
-      background-position: -194px -452px;
+      background-position: -146px -332px;
     }
     &.luke {
-      background-position: -387px -452px;
+      background-position: -287px -332px;
     }
     &.phoebe {
-      background-position: -579px -452px;
+      background-position: -430px -332px;
     }
     &.andy {
-      background-position: -762px -452px;
+      background-position: -568px -332px;
     }
     &.lynda {
-      background-position: -5px -668px;
+      background-position: -5px -496px;
     }
     &.ali {
-      background-position: -197px -668px;
+      background-position: -146px -496px;
     }
     &.anthony {
-      background-position: -580px -668px;
+      background-position: -430px -496px;
     }
     &.stephanie {
-      background-position: -8px -880px;
+      background-position: -8px -650px;
     }
     &.marykay {
-      background-position: -196px -880px;
+      background-position: -146px -650px;
     }
     &.megan {
-      background-position: -387px -880px;
+      background-position: -290px -650px;
     }
   }
 }
