@@ -72,3 +72,26 @@
   padding: 0 8px;
   font-size: 24px;
 }
+.video {
+  .poster {
+    margin-bottom: 0;
+    img {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  h2 {
+    padding: 0 5px;
+    font-family: $helvetica-bold;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  h3 {
+    padding: 0 5px;
+    font-family: $helvetica;
+    font-size: 12px;
+    font-weight: 200;
+  }
+}

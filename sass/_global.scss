@@ -219,7 +219,7 @@ p {
   }
 }
 .main_nav {
-  padding: 5% 0 0;
+  padding: 5px 0 0;
 }
 .nav_list {
   > li {
@@ -230,10 +230,11 @@ p {
       text-transform: uppercase;
       text-decoration: none;
       margin-bottom: 1px;
-      font-size: 1.85rem;
+      font-size: 28px;
       font-family: $helvetica;
       font-weight: 200;
       letter-spacing: -0.5px;
+      line-height: 1.35;
       -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
       &:hover, &:active, &:focus {
         font-family: $helvetica-bold;
