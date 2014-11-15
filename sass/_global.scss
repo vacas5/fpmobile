@@ -153,6 +153,7 @@ html {
   height: 100%;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: 100%;
 }
 strong {
   font-weight: 600;
@@ -291,12 +292,11 @@ p {
     margin: 0 auto;
     background: no-repeat url('//luke-aiello-5cnl.squarespace.com/assets/images/arrows.png');
     background-size: 100% 200%;
-    opacity: 0.7;
     &.up {
-        top: 39px;
+        top: 42px;
     }
     &.down {
-        bottom: 30px;
+        bottom: 35px;
         background-position: bottom;
     }
 }
