@@ -281,3 +281,21 @@ p {
     box-shadow: 0 5px 5px 0 rgba(50,50,50,.75);
   }
 }
+.scroll_hint {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: no-repeat url('//luke-aiello-5cnl.squarespace.com/assets/images/arrows.png');
+    background-size: 100% 200%;
+    opacity: 0.7;
+    &.up {
+        top: 39px;
+    }
+    &.down {
+        bottom: 30px;
+        background-position: bottom;
+    }
+}
