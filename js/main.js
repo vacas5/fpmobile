@@ -87,20 +87,6 @@ popcorn.toggleAccordion = function(e) {
   }
 };
 
-popcorn.showStudy = function(e) {
-  var $target = $(e.currentTarget),
-  anchor = $target.attr('href');
-
-  $('#caseStudyLinks').fadeOut('fast', function() {
-    $('#cases').fadeIn('fast');
-    // show selected
-    var toScroll = $(anchor).offset().top;
-    $('html, body').animate({
-      scrollTop: toScroll - 40
-    }, 300);
-  });
-};
-
 popcorn.showBios = function(e) {
   var $target = $(e.currentTarget),
   anchor = $target.attr('href');
@@ -197,11 +183,6 @@ $('#enterHome').click(function(e) {
 $('#consultingAccordion .slide > a, .accordion_toggle').click(function(e) {
   e.preventDefault();
   popcorn.toggleAccordion(e);
-});
-
-$('#caseStudyLinks a').click(function(e) {
-  e.preventDefault();
-  popcorn.showStudy(e);
 });
 
 $('#talentbankIntro a').click(function(e) {
