@@ -119,8 +119,9 @@ popcorn.createArticles = function(xml) {
       description: $(this).find('description').text()
     };
     markup.dateArray = markup.date.split(' ');
+    markup.id = Date.parse(markup.date);
 
-    var slide = '<div class="article_wrapper">' +
+    var slide = '<div id="' + markup.id + '" class="article_wrapper">' +
     '<a href="#" class="article_image" style="background-image:url(' + markup.image + ');" data-article="' + i + '"></a>' +
     '<h2 class="article_title">' + markup.title + '</h2>' +
     '<h3 class="article_date">' + markup.dateArray[2] + ' ' + markup.dateArray[1] + ', ' + markup.dateArray[3] + '</h3>' +
@@ -130,7 +131,17 @@ popcorn.createArticles = function(xml) {
     $('#cultureArticleFeed').append(slide);
   });
 
-  popcorn.scrollHint();
+  // send page to the chosen hash after articles are created
+  var selectedArticle = window.location.hash;
+  if (selectedArticle) {
+    // show selected
+    var toScroll = $(selectedArticle).offset().top;
+    $('html, body').animate({
+      scrollTop: toScroll - 40
+    }, 300);
+  }
+
+  self.scrollHint();
 };
 
 popcorn.showArticle = function(e) {
