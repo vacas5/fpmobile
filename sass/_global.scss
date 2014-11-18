@@ -6,6 +6,11 @@
        url('http://static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d3eb9de4b0f70dee8dda46/1406397341024/Gotham-Bold.otf')  format('truetype') /* Safari, Android, iOS */
 }
 
+@font-face {
+    font-family: 'Helvetica Ultra Light';
+    src: url('//static.squarespace.com/static/536934b6e4b0c3ef16a97e35/t/53d3ece0e4b00410ab9a0850/1406397664811/HelveticaNeue-UltraLight.otf');
+}
+
 // COLORS
 $primary-blue: #27E3FC;
 $helvetica: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -200,7 +205,7 @@ p {
   z-index: 10;
 }
 .header_heading {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: bold;
   line-height: 30px;
   text-align: center;
@@ -210,7 +215,7 @@ p {
 .menu_icon {
   float: right;
   width: 20px;
-  padding: 4px 0 0;
+  padding: 6px 0 0;
   img {
     max-width: 100%;
     vertical-align: bottom;
@@ -221,11 +226,13 @@ p {
 }
 .main_nav {
   padding: 5px 0 0;
+  font-family: "Helvetica Ultra Light";
 }
 .nav_list {
   > li {
     a {
       display: block;
+      font-family: "Helvetica Ultra Light" !important;
       color: #000;
       text-align: center;
       text-transform: uppercase;
@@ -250,6 +257,8 @@ p {
   img {
     max-width: 100%;
     vertical-align: bottom;
+    height: 25px;
+    margin-top: 3px;
   }
 }
 .footer {
@@ -270,10 +279,10 @@ p {
   margin-bottom: 0;
 }
 .thumbnail {
-  float: left;
-  width: 34%;
-  padding-top: 34%;
-  margin: 10px 8%;
+float: left;
+width: 41%;
+padding-top: 39%;
+margin: 5px 12px;
   border-radius: 50%;
   box-shadow: 0px 5px 10px 0px rgba(50,50,50,.75);
   background-position: center center;
@@ -293,10 +302,10 @@ p {
     background: no-repeat url('//luke-aiello-5cnl.squarespace.com/assets/images/arrows.png');
     background-size: 100% 200%;
     &.up {
-        top: 42px;
+        top: 52px;
     }
     &.down {
-        bottom: 35px;
+        bottom: 45px;
         background-position: bottom;
     }
 }

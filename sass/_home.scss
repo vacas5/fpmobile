@@ -8,10 +8,30 @@
   top: 0;
   left: 0;
 }
+.introFooter{
+    position:absolute;
+    bottom: 50px;
+    width: 100%;
+    text-align:center;
+    font-size: 20px;
+    color: #999999;
+}
+.introActionText{
+    display: inline-block;
+    vertical-align: middle;
+}
+.introActionArrow{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    background: no-repeat center url('/assets/images/arrow_button.png');
+    background-size: 100%;
+}
 .enter_home {
   position: absolute;
   width: 100%;
-  height: 360px;
+  height: 320px;
   left: 0;
   top: 50%;
   margin-top: -180px;
@@ -40,4 +60,12 @@
     max-width: 100%;
     width: 100%;
   }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (min-width : 321px) {
+    .home_intro{
+        height: 467px;
+    }
 }
