@@ -180,6 +180,18 @@ popcorn.closeArticle = function() {
   });
 };
 
+popcorn.equalHeight = function() {
+  var self = this;
+  var $selector = $('.video');
+  var height = 0;
+
+  $selector.removeAttr('style').each(function(index) {
+    if ($(this).height() > height) {
+      height = $(this).height();
+    }
+  }).height(height);
+};
+
 // event bindings
 $('#toggleMenu').click(function(e) {
   e.preventDefault();

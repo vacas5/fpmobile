@@ -35,22 +35,22 @@ today?">
         <div id="mainContent" class="book_content">
             <div class="videos">
                 <div class="video">
-                    <p class="poster"><a href="http://vimeo.com/92732568" target="_blank"><img src="//static.squarespace.com/static/ta/536934b6e4b0c3ef16a97e35/3400/assets/images/hbs.png"></a></p>
+                    <a class="poster" href="http://vimeo.com/92732568" target="_blank"><img src="//static.squarespace.com/static/ta/536934b6e4b0c3ef16a97e35/3400/assets/images/hbs.png"></a>
                     <h2>Faith at HBS in NYC - 2014</h2>
                     <h3>SPEAKING ON FLYING INTO THE FUTURE</h3>
                 </div>
                 <div class="video">
-                    <p class="poster"><a href="http://www.youtube.com/watch?v=MB8dsTkA_PA" target="_blank"><img src="//static.squarespace.com/static/ta/536934b6e4b0c3ef16a97e35/3400/assets/images/espn.png"></a></p>
+                    <a class="poster" href="http://www.youtube.com/watch?v=MB8dsTkA_PA" target="_blank"><img src="//static.squarespace.com/static/ta/536934b6e4b0c3ef16a97e35/3400/assets/images/espn.png"></a>
                     <h2>FAITH AT ESPN W - 2012</h2>
                     <h3>SPEAKING ON REVEOLUTION</h3>
                 </div>
                 <div class="video">
-                    <p class="poster"><a href="http://www.youtube.com/watch?v=xrOJ0bChr14" target="_blank"><img src="//static.squarespace.com/static/ta/536934b6e4b0c3ef16a97e35/3400/assets/images/capital.png"></a></p>
+                    <a class="poster" href="http://www.youtube.com/watch?v=xrOJ0bChr14" target="_blank"><img src="//static.squarespace.com/static/ta/536934b6e4b0c3ef16a97e35/3400/assets/images/capital.png"></a>
                     <h2>CONCIOUS CAPITALISM - 2011</h2>
                     <h3>EVEOLUTION: THE FUTURE OF WOMEN</h3>
                 </div>
                 <div class="video">
-                    <p class="poster"><a href="http://www.youtube.com/watch?v=5-KiWK9eg4o" target="_blank"><img src="//static.squarespace.com/static/ta/536934b6e4b0c3ef16a97e35/3400/assets/images/idea.png"></a></p>
+                    <a class="poster" href="http://www.youtube.com/watch?v=5-KiWK9eg4o" target="_blank"><img src="//static.squarespace.com/static/ta/536934b6e4b0c3ef16a97e35/3400/assets/images/idea.png"></a>
                     <h2>FAITH AT IDEACITY - 2010</h2>
                     <h3>SPEAKING ON</h3>
                 </div>
@@ -82,5 +82,9 @@ today?">
         </footer>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="js/main.js"></script>
+        <script>
+            popcorn.equalHeight();
+            $(window).resize(popcorn.debounce(popcorn.equalHeight, 500));
+        </script>
     </body>
 </html>
